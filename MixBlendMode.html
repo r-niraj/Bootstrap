@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mix Blend Mode</title>
+    <style>
+       #box {
+        width:400px;
+        height:400px;
+        border:2px soild red;
+        /* background-image: url(../Images/image.jpg); */
+        position: relative;
+        background-image: linear-gradient(to right, red, yellow);
+       }
+
+       h2{
+           background-color: red;
+           text-align: center;
+           font-size: 50px;
+           position: absolute;
+           top: 150px;
+           width:100%;
+        
+           /* mix-blend-mode: overlay; */
+           /* mix-blend-mode: color; */
+           /* mix-blend-mode: color-dodge; */
+           /* mix-blend-mode: difference; */
+       }
+
+       img{
+           mix-blend-mode: color;
+       }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <img src="../Images/image.jpg" alt="">
+        <h2>Welcome</h2>
+    </div>
+</body>
+</html>

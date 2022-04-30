@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centerd Div</title>
+    <Style>
+        .parent{
+            width:100%;
+            height: 100vh;
+            background-color: aqua;
+            display: grid;
+            place-items: center;
+            background-image:url('https://source.unsplash.com/random/1000×700/?nature,sky');
+            background-size: cover;
+}
+        .child{
+            height:200px;
+            width: 500px;
+            background-color: yellow;
+            display: grid;
+            place-items: center;
+            opacity: 0.8;
+            border-top-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+            }
+         input[type='text']{
+            outline: none;
+            border: 2px solid #000;
+            height: 22px;
+            text-indent: 10px;
+         }
+         input[type='password']{
+            outline: none;
+            border: 2px solid #000;
+            height: 22px;
+            text-indent: 10px;
+         } 
+         input[type='submit']{
+            outline: none;
+            height: 30px;
+            border-width: 0px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+         }
+    </Style>
+</head>
+<body>
+<div class="parent">
+    <div class="child">
+        <table border="0">
+            <form action="" method="post">
+                <tr>
+                    <td>Username: </td>
+                    <td><input type="text" value="" placeholder="Enter your username"></td>
+                </tr>
+                <tr>
+                    <td>Password: </td>
+                    <td><input type="password" value="" placeholder="Enter your Password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                        <input type="submit" name="submit" id="">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</div>
+</body>
+</html>

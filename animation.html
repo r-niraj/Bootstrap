@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 100px;
+            width:100px;
+            border: 2px solid red;
+            animation: infinite;
+            animation-delay: 2s;
+            animation-duration: 10s;
+            animation-name:slide;
+            animation-direction: alternate;
+        }
+
+
+		@keyframes abc{
+			0%{
+				
+			}
+			
+			10%{
+			
+			}
+			
+		}
+		
+		
+		
+        @keyframes slide{
+            25%{
+               background-color: red; 
+               margin-left: 500px;
+            }
+            50%{
+                background-color: black;
+                margin-left: 1000px;
+                transform: rotate(360deg);
+            }
+			100%{
+				 background-color: green;
+			}
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

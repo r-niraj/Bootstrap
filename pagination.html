@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Css Pagination</title>
+      <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        :root{
+            --green:#31b83a;
+            --greenNew:#99993a;
+        }
+        .pagination{
+               display: inline-block;
+               background-color: var(--green);
+               /* width:100%; */
+               padding:10px;
+        }
+        .color{
+            color:red;
+        }
+        .pagination a{
+            color:black;
+            padding:8px 15px;
+            text-decoration: none;
+            float: left;
+            /* margin-left:20px; */
+        }
+
+        .pagination a:hover{
+           background-color: black;
+           color:white;
+           border-radius:5px;
+        }
+
+        .pagination a.active{
+            background-color: var(--greenNew);
+            color:white;
+            border-radius: 5px;
+        }
+      </style>
+    </head>
+    <body>
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">&raquo;</a>       
+        </div>
+        <!-- <a href="http://google.com">Google</a> -->
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Card</title>
+    <style>
+        .card{
+            box-shadow: 0 4px 8px 0 gray;
+            transition: 0.3s;
+            width: 40%;
+        }
+
+        .card:hover{
+            box-shadow:0 8px 16px 0 black;
+        }
+        .container{
+            padding: 20px 16px;
+            background-color: black;
+            color:white;
+            text-align: center;
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="../Images/image.jpg" alt="Loading Error..">
+        <div class="container">
+            <h1><b>Your Name</b></h1>
+            <p>Your Role</p>
+        </div>
+    </div>
+</body>
+</html>

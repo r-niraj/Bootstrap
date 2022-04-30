@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After</title>
+    <style>
+        p{
+            font-size: 30px;
+            color:red;
+            margin-top: 200px;
+        }
+
+        /* p:hover::before{
+            content: "Welcome ";
+            color:blueviolet;
+            background: yellow;
+            display: block;
+        } */
+        
+        /* p::before{
+            content: "Welcome ";
+            color:blueviolet;
+            background: yellow;
+            display: block;
+        } */
+        
+        p::after{
+            content: "This is end content";
+            color:blueviolet;
+            display: block;
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur quia exercitationem corrupti quidem et
+    </p>
+</body>
+
+</html>

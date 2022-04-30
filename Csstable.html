@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table</title>
+    <style>
+        table{
+            /* border-spacing:10px 10px ; */
+            border-collapse: collapse;
+            width: 300px;
+            /* empty-cells: hide;
+            empty-cells: show; */
+            /* table-layout: auto; */
+            /* table-layout: fixed; */
+        }
+        table, td, th{
+            border:1px solid #000;
+        }
+
+        td,th{
+            /* vertical-align: top; */
+            /* vertical-align: bottom; */
+            padding: 20px 70px;
+        }
+        caption{
+            /* caption-side: bottom; */
+            caption-side: top;
+        }
+        tr:hover{
+            background-color: tomato;
+        }
+        tr:nth-child(even){
+            background-color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Table Title Here</caption>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr>
+                <td>Amit</td>
+                <td>Singh</td>
+                <td>Delhi</td>
+           </tr> 
+           <tr>
+                <td></td>
+                <td>Singh</td>
+                <td>Mumbai</td>
+           </tr> 
+           <tr>
+                <td>Renu</td>
+                <td>Sharma</td>
+                <td>Noida</td>
+           </tr>
+           
+           <tr>
+                <td>Renu</td>
+                <td>Sharma</td>
+                <td>Noida</td>
+           </tr>
+
+           <tr>
+            <td>Renu</td>
+            <td>Sharma</td>
+            <td>Noida</td>
+       </tr>
+       
+       <tr>
+            <td>Renu</td>
+            <td>Sharma</td>
+            <td>Noida</td>
+       </tr>
+        </tbody>
+    </table>
+</body>
+</html>

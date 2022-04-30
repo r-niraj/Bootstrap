@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Clip</title>
+    <style>
+        #box{
+            width: 800px;
+            height: 600px;
+            padding: 25px;
+            border:20px dotted red;
+            background-color: lime;
+
+            /* background-clip: content-box; */
+            /* background-clip: padding-box; */
+            /* background-clip: border-box;  */
+        }
+        h1{
+            color:transparent;
+            /* color:white; */
+            background-image: url(../Images/image.jpg);
+           font-size: 70px;
+           font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          -webkit-background-clip: text;
+          text-align: right;
+            /* Apply Code here */
+        }
+        p{
+            margin:0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello There</h1>
+    <div id="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus dolores suscipit esse nihil? Harum magnam
+            unde vitae ducimus facilis odio veniam sapiente rem, modi ratione, velit, suscipit nesciunt! Eveniet libero
+            debitis exercitationem ullam. Quos, illo!
+        </p>
+    </div>
+</body>
+
+</html>

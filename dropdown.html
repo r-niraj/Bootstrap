@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down</title>
+    <style>
+        .dropdown{
+            position: relative;
+            display:inline-block;
+            cursor: pointer;
+        }
+        .dropContent{
+            display: none;
+            position: absolute;
+            background-color: yellow;
+            min-width: 100px;
+            box-shadow: 0 10px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropContent{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <span>Hover Me</span>
+        <div class="dropContent">
+            <ul>
+                <li><a href="http://google.com" target="_blank">Google</a></li>
+                <li>There</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
